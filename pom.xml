@@ -46,11 +46,13 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- Spring Mail: JavaMailSender to send emails via SMTP -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-mail</artifactId>
-        </dependency>
+       
+        <!-- SendGrid: HTTP-based email sending (works on Render free tier) -->
+<dependency>
+    <groupId>com.sendgrid</groupId>
+    <artifactId>sendgrid-java</artifactId>
+    <version>4.10.2</version>
+</dependency>
 
         <!-- Validation: @NotBlank, @Email, @Size annotations on DTOs -->
         <dependency>
